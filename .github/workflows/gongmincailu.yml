@@ -1,0 +1,25 @@
+name: gongmincailu
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '1 0/6 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: gongmincailu
+        env:
+          dau7747: ${{ secrets.dau7747 }}
+        run: |
+          echo $dau7747 | jq -r .acf3 | /bin/bash
+          echo $rpit2 | jq -r .kpjvr491 | /bin/bash
+          echo $cif7775 | jq -r .ju5 | /bin/bash
+          echo $tex06 | jq -r .yn24 | /bin/bash
+          echo $b35766 | jq -r .geowf93 | /bin/bash
+          echo $pvb01 | jq -r .wql559 | /bin/bash
+          echo $m18 | jq -r .up83227 | /bin/bash
+          echo $mmva50253 | jq -r .imul639 | /bin/bash
+
